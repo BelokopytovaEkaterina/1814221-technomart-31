@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
@@ -12,11 +16,13 @@
     <div>
       <a href="index.html" title="ТЕХНОМАРТ">Техномарт</a>
       <label>
+        <a href="#" title="Поиск"><img src="img/search.svg" width="17" height="17" alt="Поиск"></a>
         <input type="search" name="search" placeholder="Поиск:">
       </label>
-
+      <a href="#" title="Закладки"><img src="img/bookmark.svg" width="14" height="15" alt="Закладки"></a>
       <a href="#" title="Закладки">Закладки: 0</a>
-      <a href="#" title="Корзина">Корзина: 10</a>
+      <a href="#" title="Корзина"><img src="img/Shape.svg" width="15" height="15" alt="Корзина"></a>
+      <a href="#" title="Корзина">Корзина: 0</a>
       <a href="#" title="Оформить заказ">Оформить заказ</a>
     </div>
 
@@ -28,6 +34,7 @@
 
     <div>
       <p>
+        <a href="#" title="Повонить"><img src="img/phone.svg" width="17" height="18" alt="Позонить"></a>
         <a href="tel:+78005558628" title="Позвонить">+7 800 555-86-28</a>
       </p>
       <p>
@@ -37,7 +44,9 @@
 
     <div>
       <!--Авторизованному пользователю-->
+      <a href="#" title="Пользователь"><img src="img/user.svg" width="20" height="18" alt="Пользователь"></a>
       <a href="#">Равшан Джамшутович</a> <a href="#">Выйти</a>
+      <a href="#" title="Выйти"><img src="img/logout.svg" width="19" height="17" alt="Выйти"></a>
     </div>
     <div>
       <a href="#" title="Мои заказы">Мои заказы</a>
@@ -60,7 +69,7 @@
   <main>
     <h1>Каталог продукции</h1>
     <ul>
-      <li><a href="index.html" title="Главная">Главная</a></li>
+      <li><a href="index.html" title="Главная"><img src="img/home.svg" width="14" height="12" alt="Выйти"></a></li>
       <li><a href="catalog.html" title="Каталог">Каталог</a></li>
       <li><a href="blank.html" title="Инструменты">Инструменты</a></li>
       <li><a title="Перфораторы">Перфораторы</a></li>
@@ -77,7 +86,7 @@
             Цена:
           </legend>
           <div>
-            <!-- Здесь будет рейндж-->>
+            <!-- Здесь будет рейндж-->
           </div>
           <div>
             <label><input type="text" name="min-price" value="0"></label>
@@ -90,24 +99,27 @@
           </legend>
           <ul>
             <li>
+              <img src="img/checkbox-on.svg" width="26" height="23" alt="">
               <input type="checkbox" name="manufacturers" value="BOSCH" id="filter-BOSCH" checked>
               <label for="filter-BOSCH">BOSCH</label>
             </li>
             <li>
+              <img src="img/checkbox-of.svg" width="23" height="23" alt="">
               <input type="checkbox" name="manufacturers" value="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
               <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
             </li>
             <li>
+              <img src="img/checkbox-on.svg" width="26" height="23" alt="">
               <input type="checkbox" name="manufacturers" value="MAKIta" id="filter-MAKIta" checked>
               <label for="filter-MAKIta">MAKIta</label>
             </li>
-          </ul>
-          <ul>
             <li>
+              <img src="img/checkbox-of.svg" width="23" height="23" alt="">
               <input type="checkbox" name="manufacturers" value="Dewalt" id="filter-Dewalt">
               <label for="filter-Dewalt">Dewalt</label>
             </li>
             <li>
+              <img src="img/checkbox-of.svg" width="23" height="23" alt="">
               <input type="checkbox" name="manufacturers" value="Hitachi" id="filter-Hitachi">
               <label for="filter-Hitachi">Hitachi</label>
             </li>
@@ -119,10 +131,12 @@
           </legend>
           <ul>
             <li>
+              <img src="img/radio-on.svg" width="25" height="25" alt="">
               <input type="radio" name="energy" value="battery" id="filter-battery" checked>
               <label for="filter-battery">Аккумуляторные</label>
             </li>
             <li>
+              <img src="img/radio-off.svg" width="25" height="25" alt="">
               <input type="radio" name="energy" value="Network" id="filter-Network">
               <label for="filter-Network">Сетевые</label>
             </li>
@@ -134,6 +148,7 @@
 
     <section>
       <h2>Сортировка:</h2>
+
       <ul>
         <li>
           <a href="#" title="По цене">По цене:</a>
@@ -145,7 +160,7 @@
           <a href="#" title="По функционалу">По функционалу:</a>
         </li>
       </ul>
-        <ul>
+      <ul>
         <li>
           <a href="#" title="Возрастание">Возрастание</a>
         </li>
@@ -161,13 +176,13 @@
       <ul>
         <li>
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/catalog/BOSCHBFG6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           <span>30500 Р.</span>
           <span>25500 Р.</span>
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/catalog/BOSCHBFG6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           <span>30500 Р.</span>
           <span>25500 Р.</span>
         </li>
@@ -182,42 +197,42 @@
         <li>
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <span>new</span>
-          <img src="https://via.placeholder.com/128x112" alt="Перфоратор BOSCH BFG 3000">
+          <img src="img/catalog/BOSCHBFG3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           <span>22500 Р.</span>
           <span>15500 Р.</span>
 
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/catalog/BOSCHBFG6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           <span>30500 Р.</span>
           <span>25500 Р.</span>
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <span>new</span>
-          <img src="https://via.placeholder.com/128x112" alt="Перфоратор BOSCH BFG 2000">
+          <img src="img/catalog/BOSCHBFG2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
           <span>22500 Р.</span>
           <span>12500 Р.</span>
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <span>new</span>
-          <img src="https://via.placeholder.com/128x112" alt="Перфоратор BOSCH BFG 3000">
+          <img src="img/catalog/BOSCHBFG3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
           <span>22500 Р.</span>
           <span>15500 Р.</span>
 
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/catalog/BOSCHBFG6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           <span>30500 Р.</span>
           <span>25500 Р.</span>
         </li>
         <li>
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <span>new</span>
-          <img src="https://via.placeholder.com/128x112" alt="Перфоратор BOSCH BFG 2000">
+          <img src="img/catalog/BOSCHBFG2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
           <span>22500 Р.</span>
           <span>12500 Р.</span>
         </li>
@@ -288,13 +303,13 @@
 
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a href="#" title="Вконтакте"><img src="img/vk.svg" width="26" height="15" alt="Вконтакте"></a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a href="#" title="Фейсбук"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"></a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a href="#" title="Инстаграм"><img src="img/insta.svg" width="21" height="21" alt="Инстаграм"></a>
         </li>
       </ul>
 
