@@ -92,6 +92,12 @@
   --address: #F3F7F9;
   --footer-nav-white: #F1F5F7;
   --footer-nav-yellow: #FFD180;
+  --dark-blue: #405069;
+  --black1: rgba(0, 0, 0, 0.24);
+  --black2: rgba(0, 0, 0, 0.15);
+  --grey1: rgba(255, 255, 255, 0.3);
+  --grey2: rgba(197, 197, 197, 0.3);
+  --grey3: rgba(169, 169, 169, 0.3);
 
 
   /* Переменные Шрифты */
@@ -156,7 +162,7 @@ img {
   padding-right: 56px;
   padding-top: 12px;
   padding-bottom: 17px;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--black1);
 }
 
 /* Шапка сайта */
@@ -171,7 +177,6 @@ img {
   font-family: var(--basic-font);
 }
 
-
 .header-top-search::before {
   content: '';
   display: inline-block;
@@ -180,7 +185,6 @@ img {
   background-image: url('../img/search.svg');
   background-repeat: no-repeat;
 }
-
 
 .bookmarks::before {
   content: '';
@@ -194,7 +198,6 @@ img {
 .bookmarks {
   color: var(--basic-white);
   text-align: center;
-
 }
 
 .bookmarks:focus {
@@ -278,10 +281,7 @@ img {
   line-height: 24px;
   color: var(--basic-blue);
   text-align: center;
-
 }
-
-
 
 .login-link {
   display: block;
@@ -344,7 +344,6 @@ img {
   opacity: 0.5;
 }
 
-
 /* main */
 
 .materials {
@@ -378,7 +377,6 @@ img {
   background-color: var(--discounts-green);
   width: 300px;
   height: 123px;
-
   font-family: var(--basic-font);
   font-weight: 700;
 }
@@ -387,23 +385,19 @@ img {
   background-color: var(--delivery-yellow);
   width: 300px;
   height: 123px;
-
   font-family: var(--basic-font);
   font-weight: 700;
 }
 
 .products-list {
-
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   color: var(--basic-white);
-
 }
 
-
 .catalog-button {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--grey1);
   color: var(--basic-white);
   width: 135px;
   line-height: 38px;
@@ -414,11 +408,11 @@ img {
 }
 
 .catalog-button:hover {
-  background-color: rgba(197, 197, 197, 0.3);
+  background-color: var(--grey2);
 }
 
 .catalog-button:active {
-  background-color: rgba(169, 169, 169, 0.3);
+  background-color: var(--grey3);
 }
 
 .slider-products {
@@ -491,10 +485,8 @@ img {
 }
 
 .popular-products-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--black2);
 }
-
-
 
 .popular-products-name {
   color: var(--basic-black);
@@ -503,7 +495,6 @@ img {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-
 }
 
 .old-price {
@@ -530,7 +521,6 @@ img {
   text-transform: uppercase;
   display: block;
 }
-
 
 .popular-manufacturers {
   background-color: var(--basic-beige);
@@ -562,11 +552,11 @@ img {
 }
 
 .popular-manufacturers-item:hover {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--black2);
 }
 
 .popular-manufacturers-item:active {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 20px var(--black2);
   opacity: 0.5;
 }
 
@@ -595,7 +585,7 @@ img {
   height: 61px;
   background-color: var(--basic-blue);
   color: var(--basic-white);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--basic-dark-blue), inset 0px 1px 0px var(--dark-blue);
   font-family: var(--basic-font);
   font-weight: bold;
   font-size: 21px;
@@ -608,7 +598,7 @@ img {
 
 .services-button-item:active {
   background-color: var(--basic-white);
-  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+  box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
   color: var(--basic-blue);
 }
 
@@ -619,7 +609,6 @@ img {
   line-height: 30px;
   text-transform: uppercase;
 }
-
 
 .company-text {
   width: 460px;
@@ -664,7 +653,6 @@ img {
   background-color: var(--basic-blue);
 }
 
-
 .footer-logo {
   width: 220px;
   height: 68px;
@@ -674,7 +662,7 @@ img {
   padding-right: 41px;
   padding-top: 20px;
   padding-bottom: 25px;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--black1);
 }
 
 .footer-contacts {
@@ -690,7 +678,6 @@ img {
 
 .footer-site-navigation {
   color: var(--footer-nav-white);
-
 }
 
 .footer-catalog-navigation {
@@ -708,10 +695,8 @@ img {
   text-decoration: none;
 }
 
-
 .footer-bottom {
   background-color: var(--basic-dark-blue);
-
 }
 
 .footer-bottom-text {
