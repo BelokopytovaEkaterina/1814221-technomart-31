@@ -79,10 +79,10 @@
   </header>
 
   <main class="container">
-    <h1>Интернет-магазин Техномарт</h1>
+    <h1 class="hidden-header">Интернет-магазин Техномарт</h1>
 
     <section>
-      <h2>Товары и Условия</h2>
+      <h2 class="hidden-header">Товары и Условия</h2>
 
       <ul class="main-lists-materials lists">
         <li class="materials">
@@ -102,22 +102,22 @@
         </li>
       </ul>
 
-      <div>
+      <div class="slider">
         <!-- Стрелка влево -->
         <button class="arrow-button" type="button"></button>
         <!-- Стрелка вправо -->
         <button class="arrow-button" type="button"></button>
 
-        <ul class="lists">
+        <ul class="slider-list lists">
 
-          <li>
+          <li class="slide active">
             <img class="img-slider" src="img/perforator.jpg" width="620" height="266" alt="Перфораторы">
             <h3 class="slider-products">Перфораторы</h3>
             <p class="slider-text">Настоящие мужские игрушки</p>
             <a class="slider-button links" href="catalog.html" title="Каталог">Открыть каталог</a>
           </li>
 
-          <li>
+          <li class="slide">
             <img class="img-slider" src="img/drill.jpg" width="620" height="266" alt="Дрели">
             <h3 class="slider-products">Дрели</р>
               <p class="slider-text">Соседям на радость!</p>
@@ -235,13 +235,13 @@
       <p class="services-text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <div class="main-services-list">
         <ul class="services-button-list lists">
-          <li class="services-button-item"><button type="button">Доставка</button></li>
-          <li class="services-button-item"><button type="button">Гарантия</button></li>
-          <li class="services-button-item"><button type="button">Кредит</button></li>
+          <li><button class="services-button" type="button">Доставка</button></li>
+          <li><button class="services-button" type="button">Гарантия</button></li>
+          <li><button class="services-button" type="button">Кредит</button></li>
         </ul>
 
         <ul class="services-list lists">
-          <li class="services-item">
+          <li class="services-item active">
             <h3 class="services-item-name">Доставка</h3>
             <p class="services-text">Мы с удовольствием доставим ваш товар прямо <br>
               к вашему подъезду совершенно бесплатно!<br>
@@ -396,11 +396,11 @@
     </form>
   </section>
 
-  <div class="modal modal-map">
+  <section class="modal modal-map">
     <!-- Здесь будет карта -->
     <img src="img/map2.png" width="1736" height="779" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П">
     <button class="modal-close" type="button">Закрыть</button>
-  </div>
+  </section>
 
 </body>
 

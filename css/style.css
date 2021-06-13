@@ -120,7 +120,6 @@ html {
 }
 
 body {
-  min-width: none;
   margin: 0;
   padding: 0;
   font-family: var(--basic-font);
@@ -160,8 +159,14 @@ img {
   font-family: var(--basic-font);
 }
 
+.hidden-header {
+  display: none;
+}
+
 .lists {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* Шапка сайта */
 /* верх */
@@ -447,6 +452,37 @@ background-color: var(--basic-dark-blue);
   background-color: var(--grey3);
 }
 
+.img-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slider {
+  position: relative;
+}
+
+.slide {
+  position: relative;
+ display: none;
+ width: 620px;
+ z-index: 1;
+ overflow: hidden;
+}
+
+.slide.active {
+  display: flex;
+  flex-direction: column;
+ }
+
+.arrow-button,
+.catalog-list {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
 .slider-products {
   text-transform: uppercase;
   font-weight: bold;
@@ -668,7 +704,7 @@ background-color: var(--basic-dark-blue);
   display: block;
 
 }
-.services-button-item {
+.services-button {
   width: 240px;
   height: 61px;
   background-color: var(--basic-blue);
@@ -680,11 +716,11 @@ background-color: var(--basic-dark-blue);
   line-height: 30px;
 }
 
-.services-button-item:hover {
+.services-button:hover {
   background-color: var(--basic-dark-blue);
 }
 
-.services-button-item:active {
+.services-button:active {
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
   color: var(--basic-blue);
@@ -696,6 +732,14 @@ background-color: var(--basic-dark-blue);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.services-item {
+  display: none;
+}
+
+.services-item.active {
+  display: block;
 }
 
 .company {
@@ -986,6 +1030,7 @@ background-color: var(--basic-dark-blue);
 
 .modal {
   box-shadow: inset 0px 4px 20px var(--black2);
+  display: none;
 }
 
 .modal-feedback {
