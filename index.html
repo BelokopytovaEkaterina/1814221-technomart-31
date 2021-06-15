@@ -28,15 +28,15 @@
 
         <form action="https://echo.htmlacademy.ru" method="post">
           <label class="header-top-search">
-            <span>Поиск по сайту</span>
+            <span class="hidden">Поиск по сайту</span>
             <input type="search" name="search" placeholder="Поиск:">
           </label>
         </form>
-        <div class="header-top-links">
-          <a class="bookmarks links" href="#" title="Закладки">Закладки: 0</a>
-          <a class="basket links" href="#" title="Корзина">Корзина: 0</a>
-          <a class="checkout links" href="#" title="Оформить заказ">Оформить заказ</a>
-        </div>
+
+        <a class="bookmarks links" href="#" title="Закладки">Закладки: 0</a>
+        <a class="basket links" href="#" title="Корзина">Корзина: 0</a>
+        <a class="checkout links" href="#" title="Оформить заказ">Оформить заказ</a>
+
       </div>
     </div>
 
@@ -48,10 +48,8 @@
           и инструментов для ремонта
         </div>
 
-        <div>
-          <p>
-            <a class="header-phone links" href="tel:+78005558628" title="Позвонить">+7 800 555-86-28</a>
-          </p>
+        <div class="header-contacts">
+          <a class="header-phone links" href="tel:+78005558628" title="Позвонить">+7 800 555-86-28</a>
           <p class="header-address">
             г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
           </p>
@@ -66,7 +64,7 @@
     </div>
 
     <nav class="main-navigation container">
-      <ul class="lists">
+      <ul class="main-navigation-list lists">
         <li class="site-navigation"><span title="Главная">Главная</span></li>
         <li class="site-navigation"><a class="links" href="blank.html" title="Компания">Компания</a></li>
         <li class="site-navigation"><a class="links" href="catalog.html" title="Каталог">Каталог</a></li>
@@ -79,26 +77,25 @@
   </header>
 
   <main class="container">
-    <h1 class="hidden-header">Интернет-магазин Техномарт</h1>
+    <h1 class="hidden">Интернет-магазин Техномарт</h1>
 
-    <section>
-      <h2 class="hidden-header">Товары и Условия</h2>
+    <section class="main-division">
+      <h2 class="hidden">Товары и Условия</h2>
 
-      <ul class="main-lists-materials lists">
-        <li class="materials">
-          <h3 class="products-list">Материалы</h3>
-
-          <a class="catalog-button links" href="catalog.html" title="Материалы">На любой вкус</a>
+      <ul class="division-products lists">
+        <li class="division materials">
+          <h3 class="division-item">Материалы</h3>
+          <a class="division-button links" href="catalog.html" title="Материалы">На любой вкус</a>
         </li>
 
-        <li class="tool">
-          <h3 class="products-list">Инструмент</h3>
-          <a class="catalog-button links" href="catalog.html" title="Инструмент">На все случаи</a>
+        <li class="division tool">
+          <h3 class="division-item">Инструмент</h3>
+          <a class="division-button links" href="catalog.html" title="Инструмент">На все случаи</a>
         </li>
 
-        <li class="technics">
-          <h3 class="products-list">Техника</h3>
-          <a class="catalog-button links" href="catalog.html" title="Техника">Для стройки</a>
+        <li class="division technics">
+          <h3 class="division-item">Техника</h3>
+          <a class="division-button links" href="catalog.html" title="Техника">Для стройки</a>
         </li>
       </ul>
 
@@ -137,22 +134,22 @@
         </ul>
       </div>
 
-      <ul class="lists">
-        <li class="discounts">
-          <h3 class="products-list">Скидки 50%</h3>
-          <a class="catalog-button links" href="blank.html" title="Каталог">На 350 товаров</a>
+      <ul class="division-services lists">
+        <li class="division discounts">
+          <h3 class="division-item">Скидки 50%</h3>
+          <a class="division-button links" href="blank.html" title="Каталог">На 350 товаров</a>
         </li>
-        <li class="delivery">
-          <h3 class="products-list">Доставка</h3>
-          <a class="catalog-button links" href="blank.html" title="Доставка">Бесплатно</a>
+        <li class="division delivery">
+          <h3 class="division-item">Доставка</h3>
+          <a class="division-button links" href="blank.html" title="Доставка">Бесплатно</a>
         </li>
       </ul>
     </section>
 
     <section class="products">
-      <div class="popular-products">
+      <div class="popular">
         <h2 class="products-heading">Популярные товары:</h2>
-        <a class="button-products links" href="#" title="ПОПУЛЯРНЫЕ ТОВАРЫ">Все популярные товары</a>
+        <a class="division-button links" href="#" title="ПОПУЛЯРНЫЕ ТОВАРЫ">Все популярные товары</a>
       </div>
       <ul class="popular-products-list lists">
         <li class="popular-products-item">
@@ -188,7 +185,7 @@
 
 
     <section class="manufacturers">
-      <div class="popular-manufacturers">
+      <div class="popular">
         <h2 class="manufacturers-heading">Популярные Производители:</h2>
         <a class="button-manufacturers links" href=" #">Все производители</a>
       </div>
@@ -267,8 +264,9 @@
       </div>
     </section>
 
-    <div class="company">
-      <section>
+
+    <section class="about-company">
+      <div lass="company">
         <h2 class="heading">КОМПАНИЯ «Техномарт»</h2>
         <div class="company-text">
           <p class="services-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
@@ -284,17 +282,18 @@
           <li class="delivery-item">ЖелДорЭкспедиция</li>
         </ul>
         <a class="company-button" href="#">Подробнее о компании</a>
-      </section>
+      </div>
 
-      <section class="contacts">
+      <div class="contacts">
         <h2 class="heading">Контакты</h2>
-        <p class="services-text">Вы можете забрать товар сами, заехав в наш офис:</p>
+        <p class="services-text">Вы можете забрать товар сами, <br>
+          заехав в наш офис:</p>
         <a href="#" title="карта"><img src="img/map.png" width="300" height="158"
             alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></a>
         <a class="contacts-button links" href="#" title="Обратная связь">Заблудились? Напишите нам!</a>
-      </section>
+      </div>
+    </section>
 
-    </div>
   </main>
 
 
