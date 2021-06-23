@@ -52,29 +52,29 @@
             г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
           </p>
         </div>
-        <div>
+        <div class="login-user">
           <div>
             <!--Авторизованному пользователю-->
-            <a href="#">Равшан Джамшутович</a> <a href="#">Выйти</a>
-            <a href="#" title="Выйти"><img src="img/logout.svg" width="19" height="17" alt="Выйти"></a>
+            <a class="login-in" href="#">Равшан Джамшутович</a> <a href="#"></a>
+            <a href="#" title="Выйти"></a>
           </div>
-          <div>
-            <a href="#" title="Мои заказы">Мои заказы</a>
-            <a href="#" title="Личный кабинет">Личный кабинет</a>
+          <div class="private">
+            <a class="private-basket" href="#" title="Мои заказы">Мои заказы</a>
+            <div class="private-img"></div>
+            <a class="private-office" href="#" title="Личный кабинет">Личный кабинет</a>
           </div>
         </div>
       </div>
 
       <nav class="main-navigation container">
         <ul class="main-navigation-list lists">
-          <li class="site-navigation"><span title="Главная">Главная</span></li>
-          <li class="site-navigation"><a class="links" href="blank.html" title="Компания">Компания</a></li>
-          <li class="site-navigation"><a class="links" href="catalog.html" title="Каталог">Каталог</a></li>
-          <li class="site-navigation"><a class="links" href="blank.html" title="Новости">Новости</a></li>
-          <li class="site-navigation"><a class="links" href="blank.html" title="Спецпредложения">Спецпредложения</a>
-          </li>
-          <li class="site-navigation"><a class="links" href="blank.html" title="Доставка">Доставка</a></li>
-          <li class="site-navigation"><a class="links" href="blank.html" title="Контакты">Контакты</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="index.html" title="Главная">Главная</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Компания">Компания</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="catalog.html" title="Каталог">Каталог</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Новости">Новости</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Спецпредложения">Спецпредложения</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Доставка">Доставка</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Контакты">Контакты</a></li>
         </ul>
       </nav>
   </header>
@@ -82,18 +82,18 @@
   <main class="main-catalog">
     <div class="container">
       <h1 class="hidden">Каталог продукции</h1>
-      <ul class="catalog-menu lists">
-        <li><a href="index.html" title="Главная">Главная</a></li>
-        <li><a href="catalog.html" title="Каталог">Каталог</a></li>
-        <li><a href="blank.html" title="Инструменты">Инструменты</a></li>
-        <li><a title="Перфораторы">Перфораторы</a></li>
-      </ul>
+      <div class="catalog-menu lists">
+        <a class="basic" href="index.html" title="Главная"></a>
+        <a class="next" href="catalog.html" title="Каталог">Каталог</a>
+        <a class="next" href="blank.html" title="Инструменты">Инструменты</a>
+        <a class="next" title="Перфораторы">Перфораторы</a>
+      </div>
 
       <h2 class="header-punchers">перфораторы</h2>
 
       <div class="catalog-content">
         <section class="main-catalog-filter">
-          <h2 class="header-filter">Фильтр:</h2>
+          <div class="header-filter">Фильтр:</div>
 
           <form class="filter-price" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
@@ -157,23 +157,17 @@
         <div>
           <section class="main-sorting">
             <span class="sorting">Сортировка:</span>
-            <ul class="sorting-item lists">
-              <li class="sorting">
-                <a href="#" title="По цене">По цене:</a>
-              </li>
-              <li class="sorting">
-                <a href="#" title="По типу">По типу:</a>
-              </li>
-              <li class="sorting">
-                <a href="#" title="По функционалу">По функционалу:</a>
-              </li>
-            </ul>
+            <div class="sorting-item lists">
+                <a class="sorting-point" href="#" title="По цене">По цене:</a>
+                <a class="sorting-point" href="#" title="По типу">По типу:</a>
+                <a class="sorting-point" href="#" title="По функционалу">По функционалу:</a>
+            </div>
             <ul class="increase lists">
               <li class="up">
-                <a class="hidden" href="#" title="Возрастание">Возрастание</a>
+                <a class="up hidden" href="#" title="Возрастание"></a>
               </li>
               <li class="down">
-                <a class="hidden" href="#" title="Убывание">Убывание</a>
+                <a class="hidden" href="#" title="Убывание"></a>
               </li>
             </ul>
           </section>
@@ -290,17 +284,11 @@
                 </div>
             </ul>
             <div class="all-pages">
-              <ul class="pages lists">
-                <li class="page1">
-                  <a title="1">1</a>
-                </li>
-                <li class="page2">
-                  <a href="#" title="2">2</a>
-                </li>
-                <li class="page3">
-                  <a href="#" title="3">3</a>
-                </li>
-              </ul>
+              <div class="pages lists">
+                  <a class="page1" href="#" title="1">1</a>
+                  <a class="page2" href="#" title="2">2</a>
+                  <a class="page3" href="#" title="3">3</a>
+              </div>
               <a class="page-next" href="#" title="Следующая">Следующая</a>
             </div>
         </div>
@@ -341,14 +329,14 @@
           </div>
         </div>
         <nav>
-          <ul class="lists">
+          <ul class="footer-navigation lists">
             <li><a class="footer-site-navigation" href="blank.html" title="Компания">Компания</a></li>
             <li><a class="footer-site-navigation" href="blank.html" title="Новости">Новости</a></li>
             <li><a class="footer-site-navigation" href="blank.html" title="Каталог">Каталог</a></li>
             <li><a class="footer-site-navigation" href="blank.html" title="Доставка">Доставка</a></li>
             <li><a class="footer-site-navigation" href="blank.html" title="Контакты">Контакты</a></li>
           </ul>
-          <ul class="lists">
+          <ul class="footer-navigation-2 lists">
             <li><a class="footer-catalog-navigation" href="blank.html" title="Материалы">Материалы</a></li>
             <li><a class="footer-catalog-navigation" href="blank.html" title="Техника">Техника</a></li>
             <li><a class="footer-catalog-navigation" href="blank.html" title="Инструмент">Инструмент</a></li>
@@ -365,17 +353,11 @@
           <span>Все права защищены</span>
         </div>
 
-        <ul class="footer-social lists">
-          <li>
-            <a class="social-bytton links" href="#" title="Вконтакте">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-bytton links" href="#" title="Фейсбук">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-bytton links" href="#" title="Инстаграм">Инстаграм</a>
-          </li>
-        </ul>
+        <div class="footer-social lists">
+          <a class="social-button vk links" href="#" title="Вконтакте"></a>
+          <a class="social-button fb links" href="#" title="Фейсбук"></a>
+          <a class="social-button ins links" href="#" title="Инстаграм"></a>
+      </div>
 
         <div class="footer-feedback">
           <span class="footer-text">Обратная связь:</span>
