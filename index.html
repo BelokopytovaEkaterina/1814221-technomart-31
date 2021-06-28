@@ -26,9 +26,9 @@
       <div class="header-top-wrapper">
         <a class="main-logo" href="#" title="Техномарт"><img src="img/logo/logo.svg" alt="Логотип Техномарт"></a>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="header-top-search">
-            <span class="hidden">Поиск по сайту</span>
-            <input type="search" name="search" placeholder="Поиск:">
+          <label class="top-search">
+            <span class="header-top-search"></span>
+            <input class="header-search" type="text" id="search" name="search" placeholder="Поиск:">
           </label>
         </form>
         <a class="bookmarks links" href="#" title="Закладки">Закладки: 0</a>
@@ -63,21 +63,26 @@
     <nav class="main-navigation container">
       <ul class="main-navigation-list lists">
         <li class="site-navigation"><span class="navigation-point" title="Главная">Главная</span></li>
-        <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Компания">Компания</a></li>
-        <li class="site-navigation"><a class="navigation-point links" href="catalog.html" title="Каталог">Каталог</a></li>
+        <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Компания">Компания</a>
+        </li>
+        <li class="site-navigation"><a class="navigation-point links" href="catalog.html" title="Каталог">Каталог</a>
+        </li>
         <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Новости">Новости</a></li>
-        <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Спецпредложения">Спецпредложения</a></li>
-        <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Доставка">Доставка</a></li>
-        <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Контакты">Контакты</a></li>
+        <li class="site-navigation"><a class="navigation-point links" href="blank.html"
+            title="Спецпредложения">Спецпредложения</a></li>
+        <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Доставка">Доставка</a>
+        </li>
+        <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Контакты">Контакты</a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1 class="hidden">Интернет-магазин Техномарт</h1>
+    <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
 
     <section class="main-division container">
-      <h2 class="hidden">Товары и Условия</h2>
+      <h2 class="visually-hidden">Товары и Условия</h2>
 
       <ul class="division-products lists">
         <li class="division materials new">
@@ -121,14 +126,10 @@
         </ul>
 
         <!-- Пагинация -->
-        <ul class="catalog-list lists">
-          <li class="catalog-item">
-            <button class="pagination-button img-button-next" type="button"></button>
-          </li>
-          <li class="catalog-item">
-            <button class="pagination-button img-button-back" type="button"></button>
-          </li>
-        </ul>
+        <div class="slider-controls">
+          <button type="button"></button>
+          <button class="current" type="button"></button>
+        </div>
       </div>
 
       <ul class="division-services lists">
@@ -248,8 +249,8 @@
     <section class="services">
       <div class="container">
         <h2 class="heading">Сервисы</h2>
-        <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! </p>
-        <p class="services-text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="main-services-list">
           <ul class="services-button-list lists">
             <li><button class="services-button" type="button">Доставка</button></li>
@@ -264,6 +265,7 @@
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем, <br>
                 поднимая его на ваш этаж!</p>
+
             </li>
             <li class="services-item">
               <h3 class="services-item-name">Гарантия</h3>
@@ -272,6 +274,7 @@
                 возгоранием, вы всегда можете быть уверены в нашей <br>
                 гарантии. Мы обменяем сгоревший товар на новый. <br>
                 Дом уж восстановите как-нибудь сами.</p>
+
             </li>
             <li class="services-item">
               <h3 class="services-item-name">Кредит</h3>
@@ -280,6 +283,12 @@
               </p>
               <a class="btn-red credit-button links" href="blank.html">Отправить заявку</a>
             </li>
+          </ul>
+
+          <ul class="lists">
+            <li class="img-delivery"></li>
+            <li class="img-guarantee visually-hidden"></li>
+            <li class="img-credit visually-hidden"></li>
           </ul>
         </div>
       </div>
@@ -290,12 +299,12 @@
       <div lass="company">
         <h2 class="heading">КОМПАНИЯ «Техномарт»</h2>
         <div class="company-text">
-          <p class="services-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+          <div class="about-company-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
             ремонта и строительства не оставит равнодушными любителей сэкономить на
-            гастарбайтерах. </p>
+            гастарбайтерах. </div>
 
-          <p class="services-text">Мы можем доставить ваш товар в самые отдаленные точки России! </p>
-          <p class="services-text">Техномарт работает со многими транспортными компаниями:</p>
+          <div class="about-company-text2">Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:</div>
         </div>
         <ul class="delivery-list lists">
           <li class="delivery-item">Деловые линии</li>
@@ -307,8 +316,8 @@
 
       <div class="contacts">
         <h2 class="heading">Контакты</h2>
-        <p class="services-text">Вы можете забрать товар сами, <br>
-          заехав в наш офис:</p>
+        <span class="services-text">Вы можете забрать товар сами, <br>
+          заехав в наш офис:</span>
         <a href="#" title="карта"><img class="map" src="img/map.png" width="300" height="158"
             alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"></a>
         <a class="btn-red contacts-button links" href="#" title="Обратная связь">Заблудились? Напишите нам!</a>
@@ -359,9 +368,9 @@
         </div>
 
         <div class="footer-social lists">
-            <a class="social-button vk links" href="#" title="Вконтакте"></a>
-            <a class="social-button fb links" href="#" title="Фейсбук"></a>
-            <a class="social-button ins links" href="#" title="Инстаграм"></a>
+          <a class="social-button vk links" href="#" title="Вконтакте"></a>
+          <a class="social-button fb links" href="#" title="Фейсбук"></a>
+          <a class="social-button ins links" href="#" title="Инстаграм"></a>
         </div>
 
         <div class="footer-feedback">
@@ -381,32 +390,31 @@
   </footer>
 
   <section class="modal modal-feedback">
-    <h2>Форма обратной связи</h2>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
 
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
       <div>
         <button class="modal-close" type="button">Закрыть</button>
 
-        <label class="feedback-item">
-          Ваше имя:
-          <input type="text" name="fielname" required placeholder="Ваше имя">
-        </label>
+        <div class="feedback-window">
+          <div class="feedback-item">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="fielname" required placeholder="Имя Фамилия">
+          </div>
+          <div class="feedback-item">
+            <label for="e-mail"> Ваш e-mail: </label>
+            <input id="e-mail" type="text" name="e-mail" required placeholder="email@example.com">
+          </div>
+          <div class="feedback-item-text">
+            <label id="text" class="feedback-item-text"> Текст письма: </label>
+            <textarea id="text" name="comment" id="comment-field">В свободной форме </textarea>
 
-        <label class="feedback-item">
-          Ваш e-mail:
-          <input type="text" name="e-mail" required placeholder="Ваш e-mail">
-        </label>
-
-        <label class="feedback-item">
-          Текст письма:
-          <textarea name="comment" id="comment-field">В свободной форме </textarea>
-        </label>
-
-      </div>
-      <div class="feedback-button-back">
-        <button class="feedback-button" type="submit">Отправить</button>
-      </div>
+          </div>
+        </div>
     </form>
+    <div class="feedback-button-back">
+      <button class="feedback-button btn-red" type="submit">Отправить</button>
+    </div>
   </section>
 
   <section class="modal modal-map">

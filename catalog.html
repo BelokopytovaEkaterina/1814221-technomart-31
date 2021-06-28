@@ -26,9 +26,9 @@
       <div class="header-top-wrapper">
         <a class="main-logo" href="#" title="Техномарт"><img src="img/logo/logo.svg" alt="Логотип Техномарт"></a>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="header-top-search">
-            <span class="hidden">Поиск по сайту</span>
-            <input type="search" name="search" placeholder="Поиск:">
+          <label class="top-search">
+            <span class="header-top-search"></span>
+            <input class="header-search" type="text" id="search" name="search" placeholder="Поиск:">
           </label>
         </form>
         <a class="bookmarks links" href="#" title="Закладки">Закладки: 0</a>
@@ -68,20 +68,27 @@
 
       <nav class="main-navigation container">
         <ul class="main-navigation-list lists">
-          <li class="site-navigation"><a class="navigation-point links" href="index.html" title="Главная">Главная</a></li>
-          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Компания">Компания</a></li>
-          <li class="site-navigation"><a class="navigation-point links" href="catalog.html" title="Каталог">Каталог</a></li>
-          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Новости">Новости</a></li>
-          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Спецпредложения">Спецпредложения</a></li>
-          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Доставка">Доставка</a></li>
-          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Контакты">Контакты</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="index.html" title="Главная">Главная</a>
+          </li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Компания">Компания</a>
+          </li>
+          <li class="site-navigation"><a class="navigation-point links" href="catalog.html" title="Каталог">Каталог</a>
+          </li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Новости">Новости</a>
+          </li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html"
+              title="Спецпредложения">Спецпредложения</a></li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Доставка">Доставка</a>
+          </li>
+          <li class="site-navigation"><a class="navigation-point links" href="blank.html" title="Контакты">Контакты</a>
+          </li>
         </ul>
       </nav>
   </header>
 
   <main class="main-catalog">
     <div class="container">
-      <h1 class="hidden">Каталог продукции</h1>
+      <h1 class="visually-hidden">Каталог продукции</h1>
       <div class="catalog-menu lists">
         <a class="basic" href="index.html" title="Главная"></a>
         <a class="next" href="catalog.html" title="Каталог">Каталог</a>
@@ -101,51 +108,62 @@
                 Цена:
               </legend>
               <div class="filter-range">
-                <!-- Здесь будет рейндж-->
+                <div class="scale">
+                  <div class="bar" style="width: 85%; margin-left: 0%"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="left: 5%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left: 75%"></div>
               </div>
               <div class="range-price">
-                <label><input class="filter-range-price" type="text" name="min-price" value="0"></label>
-                <label><input class="filter-range-price" type="text" name="max-price" value="30000"></label>
+                <label><input class="filter-range-price" type="number" name="min-price" value="0"></label>
+                <label><input class="filter-range-price" type="number" name="max-price" value="30000"></label>
               </div>
             </fieldset>
             <fieldset>
-              <legend class="filter-section">
+              <legend class="filter-section filter-line">
                 Производители:
               </legend>
               <ul class="filter-points lists">
                 <li class="manufacturers-items">
-                  <input type="checkbox" name="manufacturers" value="BOSCH" id="filter-BOSCH" checked>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="manufacturers"
+                    value="BOSCH" id="filter-BOSCH" checked>
                   <label for="filter-BOSCH">BOSCH</label>
                 </li>
                 <li class="manufacturers-items">
-                  <input type="checkbox" name="manufacturers" value="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="manufacturers"
+                    value="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
                   <label for="filter-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
                 </li>
                 <li class="manufacturers-items">
-                  <input type="checkbox" name="manufacturers" value="MAKIta" id="filter-MAKIta" checked>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="manufacturers"
+                    value="MAKIta" id="filter-MAKIta" checked>
                   <label for="filter-MAKIta">MAKIta</label>
                 </li>
                 <li class="manufacturers-items">
-                  <input type="checkbox" name="manufacturers" value="Dewalt" id="filter-Dewalt">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="manufacturers"
+                    value="Dewalt" id="filter-Dewalt">
                   <label for="filter-Dewalt">Dewalt</label>
                 </li>
                 <li class="manufacturers-items">
-                  <input type="checkbox" name="manufacturers" value="Hitachi" id="filter-Hitachi">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="manufacturers"
+                    value="Hitachi" id="filter-Hitachi">
                   <label for="filter-Hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="filter-section">
+              <legend class="filter-section filter-line">
                 Питание:
               </legend>
               <ul class="filter-points lists">
                 <li class="energy-items">
-                  <input type="radio" name="energy" value="battery" id="filter-battery" checked>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="energy" value="battery"
+                    id="filter-battery" checked>
                   <label for="filter-battery">Аккумуляторные</label>
                 </li>
-                <li>
-                  <input type="radio" name="energy" value="Network" id="filter-Network">
+                <li class="energy-items">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="energy" value="Network"
+                    id="filter-Network">
                   <label for="filter-Network">Сетевые</label>
                 </li>
               </ul>
@@ -158,22 +176,22 @@
           <section class="main-sorting">
             <span class="sorting">Сортировка:</span>
             <div class="sorting-item lists">
-                <a class="sorting-point" href="#" title="По цене">По цене:</a>
-                <a class="sorting-point" href="#" title="По типу">По типу:</a>
-                <a class="sorting-point" href="#" title="По функционалу">По функционалу:</a>
+              <a class="sorting-point" href="#" title="По цене">По цене:</a>
+              <a class="sorting-point" href="#" title="По типу">По типу:</a>
+              <a class="sorting-point" href="#" title="По функционалу">По функционалу:</a>
             </div>
             <ul class="increase lists">
               <li class="up">
-                <a class="up hidden" href="#" title="Возрастание"></a>
+                <a href="#" title="Возрастание"></a>
               </li>
               <li class="down">
-                <a class="hidden" href="#" title="Убывание"></a>
+                <a href="#" title="Убывание"></a>
               </li>
             </ul>
           </section>
 
           <section class="container">
-            <h2 class="hidden">Список перфораторов</h2>
+            <h2 class="visually-hidden">Список перфораторов</h2>
 
             <ul class="catalog-products lists">
               <li class="popular-products-item">
@@ -285,9 +303,9 @@
             </ul>
             <div class="all-pages">
               <div class="pages lists">
-                  <a class="page1" href="#" title="1">1</a>
-                  <a class="page2" href="#" title="2">2</a>
-                  <a class="page3" href="#" title="3">3</a>
+                <a class="page1" href="#" title="1">1</a>
+                <a class="page2" href="#" title="2">2</a>
+                <a class="page3" href="#" title="3">3</a>
               </div>
               <a class="page-next" href="#" title="Следующая">Следующая</a>
             </div>
@@ -301,12 +319,12 @@
         <h2 class="heading">Пара слов о перфораторах</h2>
         <p class="perforator-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
           долбления отверстий в кирпиче,
-          бетоне и камне.</p>
-        <p class="perforator-text">Существуют электромеханические и пневматические перфораторы. Современные модели
+          бетоне и камне.<br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели
           могут
           выполнять функции дрели,
-          шуруповерта и отбойного молотка. </p>
-        <p class="perforator-text"> В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
+          шуруповерта и отбойного молотка. <br>
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
           совмещены отбойный молоток и
           ударная дрель.</p>
       </div>
@@ -357,7 +375,7 @@
           <a class="social-button vk links" href="#" title="Вконтакте"></a>
           <a class="social-button fb links" href="#" title="Фейсбук"></a>
           <a class="social-button ins links" href="#" title="Инстаграм"></a>
-      </div>
+        </div>
 
         <div class="footer-feedback">
           <span class="footer-text">Обратная связь:</span>
@@ -375,15 +393,14 @@
 
   </footer>
 
-  <div class="container modal-basket hidden">
-    <div>
-      <span>Товар добавлен в корзину</span>
+  <div class="container modal-basket modal">
+    <div class="modal-basket-text">
       <button type="button">Закрыть</button>
+      <span class="add">Товар добавлен в корзину!</span>
     </div>
     <div class="modal-button-back">
-      <a class="modal-basket-button" href="blank.html">Оформить заказ</a>
+      <a class="modal-basket-button btn-red" href="blank.html">Оформить заказ</a>
       <a class="modal-basket-continue" href="blank.html">Продолжить покупки</a>
-
     </div>
   </div>
 
